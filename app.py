@@ -30,5 +30,6 @@ def login():
 @app.route("/signup")
 def signup():
     return render_template("signup.html")
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=port)
+# app.run(debug=True)
